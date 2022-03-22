@@ -1,4 +1,6 @@
-import Head from 'next/head'
+import Sidebar from '../components/Sidebar'
+import Feed from '../components/home/Feed'
+import Widgets from '../components/Widgets'
 
 const style = {
   wrapper: `flex justify-center h-screen w-screen select-none bg-[#15202b] text-white`,
@@ -9,9 +11,9 @@ export default function Home() {
   return (
     <div className={style.wrapper}>
     <div className={style.content}>
-      <h2>Sidebar</h2>
-      <h2>Feed</h2>
-      <h2>Widgets</h2>
+      <Sidebar />
+      <Feed />
+      <Widgets />
     </div>
    
     </div>
